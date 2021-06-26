@@ -9,7 +9,7 @@ Hello Spring!
 
 <br><br>
 
-<!-- can read form field data with ${param. form field name -->
+<%-- can read form field data with ${param. form field name}--%>
 Student name: ${param.studentName}
 
 
