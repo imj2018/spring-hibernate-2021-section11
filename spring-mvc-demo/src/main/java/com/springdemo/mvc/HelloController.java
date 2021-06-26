@@ -3,6 +3,7 @@ package com.springdemo.mvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+// @Controller inherits from @Component
 @Controller
 public class HelloController {
 	
@@ -10,7 +11,7 @@ public class HelloController {
 	@RequestMapping("/showForm")
 	public String showForm() {
 		
-		// /WEB-INF/view/hello-form.jsp
+		// /WEB-INF/view/hello-form.jsp, view name
 		return "hello-form";
 	}
 	
