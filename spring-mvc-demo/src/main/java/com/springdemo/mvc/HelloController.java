@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 // @Controller inherits from @Component
 @Controller
+// hello is now the main/parent request mapping i.e hello/showForm and hello/processForm 
+// like folder/sub folder structure
+@RequestMapping("/hello") 
 public class HelloController {
 	
 	// need a controller method to show the initial HTML form
