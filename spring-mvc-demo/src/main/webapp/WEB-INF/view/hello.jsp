@@ -12,6 +12,10 @@ Hello Spring!
 <%-- can read form field data with ${param. form field name}--%>
 Student name: ${param.studentName}
 
+<br><br>
+
+<%-- access attribute from the model i.e model.addAttribute("message", result); --%>
+The message: ${message}
 
 </body>
 

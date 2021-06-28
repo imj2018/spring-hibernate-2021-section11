@@ -36,7 +36,7 @@ public class HelloController {
 		name = name.toUpperCase();
 		
 		// create the message
-		String result = "Yo!" + name;
+		String result = "Yo! " + name;
 		
 		// add message to the model
 		// name of attribute is message, value is result
