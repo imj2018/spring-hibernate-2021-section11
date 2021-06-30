@@ -10,8 +10,8 @@
 
 <body>
  
- 	<%-- spring mvc form tags form:form, form:input --%>
- 	<%-- model attribute must match the atrribute name given in controller "employee" i.e 
+ 	<%-- spring mvc form tags form:form and form:input --%>
+ 	<%-- model attribute must match the attribute name given in controller "employee" i.e 
  	model.addAttribute("employee", employee); --%> 
  	<form:form action="processForm" modelAttribute="employee">
  	
