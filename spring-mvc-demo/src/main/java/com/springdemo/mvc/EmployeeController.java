@@ -34,8 +34,8 @@ public class EmployeeController {
 		
 		System.out.println("employee: " + employee.getFirstName() + " " + employee.getLastName());
 		System.out.println("countries: " + employee.getCountryOptions());
-		System.out.println("employee: " + employee.getCountry());
-		System.out.println("employee: " + employee.getFavoriteLanguage());
+		System.out.println("country: " + employee.getCountry());
+		System.out.println("language: " + employee.getFavoriteLanguage());
 		
 		
 		return "employee-confirmation";

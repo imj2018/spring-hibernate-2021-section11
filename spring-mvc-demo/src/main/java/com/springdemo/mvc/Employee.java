@@ -11,6 +11,8 @@ public class Employee {
 	
 	private String favoriteLanguage;
 	
+	private LinkedHashMap<String, String> favoriteLanguageOptions;
+	
 	// collection of name value pairs (first value is key, second is the value), ordered
 	private LinkedHashMap<String, String> countryOptions;
 	
@@ -25,6 +27,12 @@ public class Employee {
 		countryOptions.put("RUS", "Russia");
 		countryOptions.put("NAM", "Namibia");
 		countryOptions.put("US", "United States of America");
+		
+		favoriteLanguageOptions = new LinkedHashMap<>();
+		favoriteLanguageOptions.put("Java", "Java");
+		favoriteLanguageOptions.put("C#", "C#");		
+		favoriteLanguageOptions.put("PHP", "PHP");
+		favoriteLanguageOptions.put("Ruby", "Ruby");		
 		
 	}
 
@@ -64,6 +72,10 @@ public class Employee {
 
 	public void setFavoriteLanguage(String favoriteLanguage) {
 		this.favoriteLanguage = favoriteLanguage;
+	}
+
+	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
+		return favoriteLanguageOptions;
 	}
 	
 	
