@@ -14,9 +14,9 @@
 
 <body>
 
-<br><br>
-
 <i>Fill out the form. Asterik (*) means required.</i>
+
+<br><br>
 	
 	<form:form action="processForm" modelAttribute="customer">
 	
