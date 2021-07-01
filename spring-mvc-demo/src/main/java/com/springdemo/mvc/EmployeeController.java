@@ -14,10 +14,10 @@ public class EmployeeController {
 	@RequestMapping("/showForm")
 	public String showForm(Model model) {
 		
-		// create a student object
+		// create a  employee object
 		Employee employee = new Employee();
 		
-		// add student object to the model 
+		// add employee object to the model 
 		// name of the attribute is "employee", value of the attribute is employee created line 15
 		model.addAttribute("employee", employee);
 		
@@ -33,7 +33,10 @@ public class EmployeeController {
 			@ModelAttribute("employee") Employee employee) {
 		
 		System.out.println("employee: " + employee.getFirstName() + " " + employee.getLastName());
-		System.out.println("country: " + employee.getCountry());
+		System.out.println("countries: " + employee.getCountryOptions());
+		System.out.println("employee: " + employee.getCountry());
+		System.out.println("employee: " + employee.getFavoriteLanguage());
+		
 		
 		return "employee-confirmation";
 	}

@@ -15,28 +15,41 @@
  	model.addAttribute("employee", employee); --%> 
  	<form:form action="processForm" modelAttribute="employee">
  	
- 	<%-- property of Employee class, spring mvc will call employee.getFirstName 
+ 	<%-- binding (data binding) property of Employee class, spring mvc will call employee.getFirstName 
  	behind the scences --%>
  	First name: <form:input path="firstName" />
  	
  	<br><br>
  	
- 	Last name: <form:input path="lastName" />
+ 	First name: <form:input path="lastName" />
  	
  	<br><br>
  	
  	Country:
  	
  	<br><br>
+ 	<%-- bind to the country property, somehow binds via form:select to the selected country 
+ 	from countryOptions collection (LinkedHashMap) for result i.e Country: NAM --%>
  	<form:select path="country">
  	
  		<%-- set fields --%>	
- 		<form:option value="Chile" label="Chile" />
- 		<form:option value="Greece" label="Greece" /> 		
- 		<form:option value="Russia" label="Russia" />
- 		<form:option value="Namibia" label="Namibia" /> 		 	
+ 		<%--  form:options not form:option to return the collection 
+ 		with employee.getCountryOptions  --%>
+ 		<form:options items="${employee.countryOptions}" />	 	
  	
  	</form:select>
+ 	
+ 	<br><br>
+ 	
+ 	Favorite Language:
+ 	
+ 	<%-- bind to property, call setter for favorite language--%>
+ 	Java <form:radiobutton path="favoriteLanguage" value="Java" />
+ 	C# <form:radiobutton path="favoriteLanguage" value="C#" />
+ 	PHP <form:radiobutton path="favoriteLanguage" value="PHP" />
+ 	Ruby <form:radiobutton path="favoriteLanguage" value="Ruby" /> 	
+ 	
+ 	<br><br>
  	
  	
  	<%-- when submitted the setters are called employee.setFirstName etc for whatever

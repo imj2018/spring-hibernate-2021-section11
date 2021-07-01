@@ -14,5 +14,9 @@ The employee is confirmed: ${employee.firstName} ${employee.lastName}
 
 Country: ${employee.country}
 
+<br><br>
+
+Favorite Language: ${employee.favoriteLanguage}
+
 </body>
 </html>
