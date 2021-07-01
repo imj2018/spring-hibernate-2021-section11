@@ -16,6 +16,9 @@ public class Employee {
 	// collection of name value pairs (first value is key, second is the value), ordered
 	private LinkedHashMap<String, String> countryOptions;
 	
+	// an array as the checkbox allows multiple selection
+	private String[] operatingSystems;
+	
 	public Employee() {
 		
 		// populate country options: used ISO country code
@@ -76,6 +79,15 @@ public class Employee {
 
 	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
 		return favoriteLanguageOptions;
+	}
+	
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+	
+	// as aformentioned the setter will be called on form submit
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
 	}
 	
 	

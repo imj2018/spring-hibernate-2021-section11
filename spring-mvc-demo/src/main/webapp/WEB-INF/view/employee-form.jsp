@@ -53,6 +53,14 @@
  	
  	<br><br>
  	
+ 	Operating Systems:
+ 	
+ 	<form:checkbox path="operatingSystems" value="Linux"/>
+  	<form:checkbox path="operatingSystems" value="MS Windows"/>
+  	<form:checkbox path="operatingSystems" value="MAC OS"/>
+  	
+  	<br><br>
+ 	
  	
  	<%-- when submitted the setters are called employee.setFirstName etc for whatever
  	 is passed in the fields by the user --%>
