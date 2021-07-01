@@ -1,4 +1,4 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 
@@ -6,8 +6,7 @@
 
 <head>
 	<title>Customer Registration Form</title>
-	
-	<%-- maps to cssClass="error" for lastName--%>
+		<%-- maps to cssClass="error" for lastName--%>
 	<style>
 		.error {color:red})
 	</style>
@@ -15,9 +14,12 @@
 
 <body>
 
+<br><br>
+
 <i>Fill out the form. Asterik (*) means required.</i>
 	
 	<form:form action="processForm" modelAttribute="customer">
+	
 	
 		First name: <form:input path="firstName" />
 	

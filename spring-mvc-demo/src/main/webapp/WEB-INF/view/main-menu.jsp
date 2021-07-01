@@ -14,6 +14,10 @@
 
 <a href="employee/showForm"> employee form</a>
 
+<br><br>
+
+<a href="customer/showForm"> customer form</a>
+
 </body>
 
 </html>
