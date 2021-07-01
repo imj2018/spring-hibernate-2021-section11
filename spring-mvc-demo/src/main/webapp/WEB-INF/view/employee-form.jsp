@@ -21,11 +21,25 @@
  	
  	<br><br>
  	
- 	First name: <form:input path="firstName" />
+ 	Last name: <form:input path="lastName" />
  	
  	<br><br>
  	
- 	<%-- when submitted the setters are called student.setFirstName for whatever
+ 	Country:
+ 	
+ 	<br><br>
+ 	<form:select path="country">
+ 	
+ 		<%-- set fields --%>	
+ 		<form:option value="Chile" label="Chile" />
+ 		<form:option value="Greece" label="Greece" /> 		
+ 		<form:option value="Russia" label="Russia" />
+ 		<form:option value="Namibia" label="Namibia" /> 		 	
+ 	
+ 	</form:select>
+ 	
+ 	
+ 	<%-- when submitted the setters are called employee.setFirstName etc for whatever
  	 is passed in the fields by the user --%>
  	<input type="submit" value="Submit" />
  	

@@ -33,6 +33,7 @@ public class EmployeeController {
 			@ModelAttribute("employee") Employee employee) {
 		
 		System.out.println("employee: " + employee.getFirstName() + " " + employee.getLastName());
+		System.out.println("country: " + employee.getCountry());
 		
 		return "employee-confirmation";
 	}
